@@ -1,9 +1,10 @@
+import style from './Items.module.css'
 import Item from "./Item"
 
 function Items(props) {
 
   return (
-    <ul>
+    <ul className={style.items}>
     {props.items.map((item) => {
       return  <Item key={item.login.uuid}person={item}/>
     })}
